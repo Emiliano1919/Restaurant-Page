@@ -57,44 +57,77 @@ table {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-.header,.footer{
-    background-color: black;
-}
 .header,.main,.footer{
     font-family: 'Roboto', sans-serif;
 }
 
 .header{
+    background-color: #343434; 
     grid-row: 1/2;
-    color: white;
+    color: #f3f3f3;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 0.7rem;
     font-size: large;
+    border-bottom: 4px solid rgba(31, 31, 31, 0.363);
 }
 
 .main{
+    background-color: #e9dcbe; 
+    color: #f3f3f3;
     grid-row: 2/6;
     min-height: 96vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    
 }
 
 .footer{
+    background-color: #343434; 
     grid-row: 6/7;
-    color: white;
+    color:#f3f3f3;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 0.7rem;
     font-size: medium;
+    border-top: 4px solid rgba(31, 31, 31, 0.38);
 }
 
 .times{
-    color: white;
+    color: #f3f3f3;
     
 }
+
+.info{
+    background-color: #343434;
+    border: 3px dashed #f3f3f3;
+    border-radius: 3rem;
+    min-height: 90dvh;
+    min-width: 50dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 60px 16px 1rem 1rem #3434346c;
+}
+.main {
+    /*Taken from css patterns*/
+    --s: 100px; /* control the size */
+    --c1: #F8B195;
+    --c2: #355C7D;
+    
+    --_g: 
+       var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
+       var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,var(--c2) 86% 94%;
+    background:
+      radial-gradient(100% 100% at 100% 0,var(--c1) 4%,var(--_g),#0008 96%,#0000),
+      radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
+      var(--c1);
+    background-size: var(--s) var(--s);
+  }
+  
