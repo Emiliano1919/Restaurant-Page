@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Major+Mono+Display&family=Martian+Mono:wght@300&display=swap');
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -55,10 +54,30 @@ table {
     width: 100dvw;
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Major Mono Display', monospace;
 }
-.header,.main,.footer{
-    font-family: 'Roboto', sans-serif;
+.header,.footer{
+    font-family: 'Major Mono Display', monospace;
+}
+#TITLE{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#logo{
+    font-family: 'Martian Mono', monospace;
+}
+#extra{
+    font-family: 'Major Mono Display', monospace;
+}
+.info{
+    font-family: 'Major Mono Display', monospace;
+}
+
+
+h1{
+    font-size: 2rem;
+    font-family: 'Major Mono Display', monospace;
 }
 
 .header{
@@ -106,14 +125,14 @@ table {
 .info{
     background-color: #343434;
     border: 3px dashed #f3f3f3;
-    border-radius: 3rem;
+    border-radius: 1.5rem;
     min-height: 90dvh;
     min-width: 50dvw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     box-shadow: 60px 16px 1rem 1rem #3434346c;
+    display: grid;
+    grid-template-rows: 0.5fr 4fr;
+    align-items: center;
+    justify-items: center;
 }
 .main {
     /*Taken from css patterns*/
