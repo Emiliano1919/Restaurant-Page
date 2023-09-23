@@ -59,6 +59,11 @@ table {
 .header,.footer{
     font-family: 'Major Mono Display', monospace;
 }
+.contact:hover,.menu:hover{
+    color: #F8B195;
+}
+
+
 #TITLE{
     display: flex;
     flex-direction: column;
@@ -178,4 +183,6 @@ li{
 .hidden{
     display: none;
 }
+
+
   
