@@ -162,7 +162,6 @@ li{
     grid-template-rows: 0.5fr 4fr;
     align-items: center;
     justify-items: center;
-    min-width: 22rem;
 }
 .information{
     display: flex;
@@ -170,7 +169,7 @@ li{
     margin-right: 2rem;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: stretch;
 }
 .title{
     padding: 0.4rem;
@@ -196,6 +195,7 @@ li{
 .hidden{
     display: none;
 }
+
 
 
   
