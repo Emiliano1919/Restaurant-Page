@@ -63,11 +63,13 @@ html{
     color: #F8B195;
 }
 
-
 #TITLE{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+#TITLE:hover{
+    color: #f7b9a1;
 }
 #logo{
     font-family: 'Martian Mono', monospace;
@@ -87,6 +89,11 @@ h1{
 h2{
     padding: 0.5rem;
     font-size: 2rem;
+}
+h3{
+    font-size: 1rem;
+    font-family: 'Major Mono Display', monospace;
+    margin-bottom: 6.5rem;
 }
 
 li{
@@ -138,8 +145,28 @@ li{
     color: #f3f3f3;
     
 }
+.infoName{
+    margin-right: 1.02rem;
+    margin-left: 1.02rem;
+    background-color: #343434;
+    border: 3px solid #f3f3f3;
+    border-radius: 1.5rem;
+    min-height: 82dvh;
+    min-width: 50dvw;
+    box-shadow: 60px 16px 1rem 1rem #3434346c;
+    display: grid;
+    grid-template-rows: 0.5fr 4fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.infoName h1{
+    font-family: 'Martian Mono', monospace;
+}
 
 .infoMenu{
+    margin-right: 1.02rem;
+    margin-left: 1.02rem;
     background-color: #343434;
     border: 3px solid #f3f3f3;
     border-radius: 1.5rem;
@@ -166,6 +193,7 @@ li{
     align-items: center;
     justify-items: center;
 }
+
 .information{
     display: flex;
     margin-left: 2rem;
@@ -173,13 +201,15 @@ li{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: stretch;
+    max-width:min-content;
 }
 .title{
-    padding: 0.4rem;
+    margin: 1rem;
     border-bottom: 2px solid #f3f3f3;
 }
 
 .main {
+    min-height: 82dvh;
     /*Taken from css patterns*/
     --s: 100px; /* control the size */
     --c1: #F8B195;
