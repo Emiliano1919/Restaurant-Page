@@ -1,27 +1,23 @@
 //If you import here the css it will fail.
+import { contactPage } from './contact.js';
 
-function toggle(e) {
-    console.log(e.classList.contains('hidden'))
-    if (e.classList.contains('hidden')) {
-      e.classList.remove('hidden');
-    } else {
-      e.classList.add('hidden');
-    }
-  };
-  
-    const contact = document.getElementById('contact');
-    const menu = document.getElementById('menu');
-    const infoContainer = document.querySelector('.infoMenu');
-  
+
+const contact = document.getElementById('contact');
+const menu = document.getElementById('menu');
+const infoMenu = document.querySelector('.infoMenu');
+contactPage();
+const infoContact = document.querySelector('.infoContact');
   
     
   
 function addListeners () {
     menu.addEventListener('click', () => {
-        toggle(infoContainer);
+        infoContact.classList.add('hidden');
+        infoMenu.classList.remove('hidden');
       });
     contact.addEventListener('click', () => {
-        toggle(infoContainer);
+        infoMenu.classList.add('hidden');
+        infoContact.classList.remove('hidden');
       });
 };
 

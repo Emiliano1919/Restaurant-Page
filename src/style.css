@@ -151,6 +151,19 @@ li{
     align-items: center;
     justify-items: center;
 }
+.infoContact{
+    background-color: #343434;
+    border: 3px solid #f3f3f3;
+    border-radius: 1.5rem;
+    min-height: 90dvh;
+    min-width: 50dvw;
+    box-shadow: 60px 16px 1rem 1rem #3434346c;
+    display: grid;
+    grid-template-rows: 0.5fr 4fr;
+    align-items: center;
+    justify-items: center;
+    min-width: 22rem;
+}
 .information{
     display: flex;
     margin-left: 2rem;
