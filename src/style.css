@@ -59,7 +59,7 @@ table {
 .header,.footer{
     font-family: 'Major Mono Display', monospace;
 }
-.contact:hover,.menu:hover{
+#contact:hover,#menu:hover{
     color: #F8B195;
 }
 
@@ -139,7 +139,7 @@ li{
     
 }
 
-.info{
+.infoMenu{
     background-color: #343434;
     border: 3px solid #f3f3f3;
     border-radius: 1.5rem;

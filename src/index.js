@@ -1,19 +1,27 @@
 import './style.css';
 
- function component() {
-   const element = document.createElement('div');
+//Event listeners
 
-   // Lodash, now imported by this script
-   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-   element.classList.add('hello');
 
-  /* Add the image to our existing div.
-  const myIcon = new Image();
-  myIcon.src = Icon;
+function toggle(e) {
+  console.log(e.classList.contains('hidden'))
+  if (e.classList.contains('hidden')) {
+    e.classList.remove('hidden');
+  } else {
+    e.classList.add('hidden');
+  }
+};
 
-  element.appendChild(myIcon); */
+  const contact = document.getElementById('contact');
+  const menu = document.getElementById('menu');
+  const infoContainer = document.querySelector('.infoMenu');
 
-   return element;
- }
 
- document.body.appendChild(component());
+  
+
+  export function addListeners () {
+    menu.addEventListener('click', toggle(infoContainer));
+    contact.addEventListener('click', toggle(infoContainer));
+  };
+
+  addListeners();
